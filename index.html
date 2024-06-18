@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тетріс</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Тетріс</h1>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="300" height="600"></canvas>
+        <div class="info-panel">
+            <div id="clickableSquare"></div> <!-- Клікабельний квадрат -->
+            <p>Рахунок: <span id="score">0</span></p>
+            <p>Рекорд: <span id="highScore">0</span></p>
+            <p>Лінії: <span id="lines">0</span></p>
+            <p>Швидкість: <span id="speed">1</span></p>
+            <button id="easyMode">Легкий</button>
+            <button id="mediumMode">Середній</button>
+            <button id="hardMode">Важкий</button>
+            <button id="pauseButton">Пауза</button>
+            <button id="restartButton">Рестарт</button>
+            <div id="speedSliderContainer" class="hidden"> <!-- Контейнер для повзунка -->
+                <input type="range" id="speedSlider" min="1" max="40" value="10"> <!-- Максимальна швидкість 40 -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
